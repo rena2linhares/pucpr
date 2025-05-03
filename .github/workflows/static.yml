@@ -74,7 +74,7 @@ jobs:
           git checkout main
           git merge af1 --no-edit -X theirs --allow-unrelated-histories
           git push origin main
-          
+
   discord:
       runs-on: ubuntu-latest
       steps:
@@ -83,7 +83,7 @@ jobs:
           uses: Sniddl/discord-commits@v1.6
           with:
             webhook_url: ${{ secrets.YOUR_DISCORD }}
-            webhook: ${{ secrets.DISCORD_WEBHOOK }}
+            webhook: ${{ secrets.DISCORD }}
             template: "avatar-with-link"
             include-extras: true
 
