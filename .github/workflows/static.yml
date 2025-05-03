@@ -74,8 +74,8 @@ jobs:
           git checkout main
           git merge af1 --no-edit -X theirs --allow-unrelated-histories
           git push origin main
-
-  discord:
+    
+    discord:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v4
@@ -86,3 +86,5 @@ jobs:
             webhook: ${{ secrets.DISCORD }}
             template: "avatar-with-link"
             include-extras: true
+
+
