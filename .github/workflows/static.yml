@@ -74,7 +74,7 @@ jobs:
           git checkout main
           git merge af1 --no-edit -X theirs --allow-unrelated-histories
           git push origin main
-
+    
   discord:
       runs-on: ubuntu-latest
       steps:
@@ -87,5 +87,4 @@ jobs:
             template: "avatar-with-link"
             include-extras: true
 
-    
 
