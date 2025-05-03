@@ -86,6 +86,3 @@ jobs:
             webhook: ${{ secrets.DISCORD }}
             template: "avatar-with-link"
             include-extras: true
-
-    
-
